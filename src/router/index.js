@@ -1,9 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '../views/Home'
+import Second from '../views/Second'
 
 Vue.use(VueRouter)
 
   const routes = [
+    {
+      path: '/',
+      component: Home
+    },
+    {
+      path: '/second',
+      component: Second
+    }
 ]
 
 const router = new VueRouter({

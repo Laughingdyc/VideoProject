@@ -16,7 +16,7 @@
         <!-- 下方的列表链接 -->
         <ul>
           <li v-for="item of TopItems" :key="item">
-            {{ item }}
+            <router-link :to="{path: '/second'}">{{ item }}</router-link>
           </li>
         </ul>
       </el-main>
@@ -31,7 +31,7 @@
         <!-- 下方的列表链接 -->
         <ul>
           <li v-for="item of BottomItems" :key="item">
-            {{ item }}
+            <router-link :to="{path: '/second'}">{{ item }}</router-link>
           </li>
         </ul>
       </el-main>

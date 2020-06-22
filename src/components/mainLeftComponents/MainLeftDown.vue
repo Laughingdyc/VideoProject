@@ -10,7 +10,7 @@
       <el-main class="bg-pink">
         <ul>
           <li v-for="item of Items" :key="item">
-            {{ item }}
+            <router-link :to="{path: '/second'}">{{ item }}</router-link>
           </li>
         </ul>
       </el-main>
